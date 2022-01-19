@@ -1,10 +1,19 @@
 module.exports = {
     purge: [
-        'public/*.html',
+        './public/*.html',
     ],
-    content: [],
+    darkMode: false, // or 'media' or 'class'
     theme: {
+        extend: {
+            colors: {
+                brand: '#72569D',
+            }
+        },
+    },
+    variants: {
         extend: {},
     },
-    plugins: [],
+    plugins: [
+        require('tailwindcss-rtl'),
+    ],
 }
