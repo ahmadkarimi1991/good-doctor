@@ -14,8 +14,9 @@
 }
 
 .sticky-navbar {
+    @apply fixed;
     background-image: linear-gradient(to bottom right, #FFFF, #FFFF, #FFFBF7, #FFF7F1, #FEF1E6, #FEEEE1, #FEEBDC);
-    padding-top: 0!important;
+    padding: 0 .25rem!important;
     box-shadow: 0px 2px 15px #636363;
 }
 

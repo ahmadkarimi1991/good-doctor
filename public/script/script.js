@@ -54,9 +54,9 @@ const navTop = nav.offsetTop;
 
 function fixedNav() {
     if (window.scrollY >= navTop) {
-        nav.classList.add("fixed", "sticky-navbar");
+        nav.classList.add("sticky-navbar");
     } else {
-        nav.classList.remove("fixed", "sticky-navbar");
+        nav.classList.remove("sticky-navbar");
     }
 }
 
