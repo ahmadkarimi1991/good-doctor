@@ -3,3 +3,54 @@
 @import "tailwindcss/utilities";
 @import "font.css";
 @import "base.css";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "font.css";
+@import "base.css";
+.header,
+.footer {
+    background-image: linear-gradient(to bottom right, #FFFF, #FFFF, #FFFBF7, #FFF7F1, #FEF1E6, #FEEEE1, #FEEBDC);
+}
+
+.sticky-navbar {
+    @apply fixed;
+    background-image: linear-gradient(to bottom right, #FFFF, #FFFF, #FFFBF7, #FFF7F1, #FEF1E6, #FEEEE1, #FEEBDC);
+    padding: 0 .25rem!important;
+    box-shadow: 0px 2px 15px #636363;
+}
+
+.icons {
+    color: #868686;
+}
+
+.open .accordion-item-heading::after,
+.close .accordion-item-heading::after {
+    @apply w-8 h-8 rounded-lg text-center leading-8 float-left;
+    background-color: #e9e9e9;
+}
+
+.open .accordion-item-heading::after {
+    content: url('../../public/images/stroke-01.svg');
+}
+
+.close .accordion-item-heading::after {
+    content: url('../../public/images/stroke-02.svg');
+}
+
+.close .accordion-item-content {
+    @apply h-0 block;
+    transition: height 1s ease-out;
+    transform: scaleY(0);
+}
+
+.open .accordion-item-content {
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform 0.4s ease;
+}
+
+.open .accordion-item-content::before {
+    @apply inline-block w-2 h-2 bg-gray-300;
+    content: '';
+}
