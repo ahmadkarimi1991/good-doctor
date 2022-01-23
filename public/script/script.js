@@ -60,4 +60,4 @@ function fixedNav() {
     }
 }
 
-window.addEventListener("scroll", fixedNav);
+window.addEventListener("scroll", fixedNav); //

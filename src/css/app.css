@@ -8,16 +8,24 @@
 @import "tailwindcss/utilities";
 @import "font.css";
 @import "base.css";
+.scroll-smooth {
+    scroll-behavior: smooth;
+}
+
 .header,
 .footer {
     background-image: linear-gradient(to bottom right, #FFFF, #FFFF, #FFFBF7, #FFF7F1, #FEF1E6, #FEEEE1, #FEEBDC);
 }
 
 .sticky-navbar {
-    @apply fixed;
+    @apply shadow-md py-0 px-2 !important;
     background-image: linear-gradient(to bottom right, #FFFF, #FFFF, #FFFBF7, #FFF7F1, #FEF1E6, #FEEEE1, #FEEBDC);
-    padding: 0 .25rem!important;
-    box-shadow: 0px 2px 15px #636363;
+}
+
+@screen md {
+    .sticky-navbar {
+        @apply fixed !important;
+    }
 }
 
 .icons {
@@ -39,7 +47,7 @@
 }
 
 .close .accordion-item-content {
-    @apply h-0 block;
+    @apply h-0 block pb-0;
     transition: height 1s ease-out;
     transform: scaleY(0);
 }
