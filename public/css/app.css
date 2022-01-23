@@ -202,8 +202,7 @@ select { /* 1 */
 Correct the inability to style clickable types in iOS and Safari.
 */
 
-button,
-[type='button'] {
+button {
   -webkit-appearance: button;
 }
 
@@ -534,6 +533,34 @@ video {
 *, ::before, ::after {
   --tw-border-opacity: 1;
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+}
+
+.container {
+  max-width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 56rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 64rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 72rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 80rem;
+  }
 }
 
 .pointer-events-none {
@@ -1296,10 +1323,6 @@ video {
   .sm\:flex {
     display: flex;
   }
-
-  .sm\:max-w-3xl {
-    max-width: 48rem;
-  }
 }
 
 @media (min-width: 768px) {
@@ -1331,10 +1354,6 @@ video {
 
   .md\:w-3\/4 {
     width: 75%;
-  }
-
-  .md\:max-w-4xl {
-    max-width: 56rem;
   }
 
   .md\:grid-cols-2 {
@@ -1404,10 +1423,6 @@ video {
     width: 60%;
   }
 
-  .lg\:max-w-5xl {
-    max-width: 64rem;
-  }
-
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1456,17 +1471,10 @@ video {
     right: 0px;
   }
 
-  .xl\:max-w-6xl {
-    max-width: 72rem;
-  }
-
   .xl\:overflow-x-hidden {
     overflow-x: hidden;
   }
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:max-w-7xl {
-    max-width: 80rem;
-  }
 }
