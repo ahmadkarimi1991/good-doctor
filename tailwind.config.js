@@ -6,7 +6,10 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                brand: '#72569D',
+                brand: '#3EBDC6',
+                cream: '#FFF4EA',
+                main: '#0096D1',
+                content: '#282828',
             }
         },
         container: {
@@ -34,15 +37,18 @@ module.exports = {
                 '.container': {
                     maxWidth: '100%',
                     '@screen sm': {
-                        maxWidth: '56rem',
+                        maxWidth: '36rem',
                     },
                     '@screen md': {
-                        maxWidth: '64rem',
+                        maxWidth: '48rem',
                     },
                     '@screen lg': {
-                        maxWidth: '72rem',
+                        maxWidth: '60rem',
                     },
                     '@screen xl': {
+                        maxWidth: '68rem',
+                    },
+                    '@screen 2xl': {
                         maxWidth: '80rem',
                     },
                 }

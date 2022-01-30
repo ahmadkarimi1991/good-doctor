@@ -15,6 +15,12 @@ var Tawk_API = Tawk_API || {},
 //Accordion
 const accordionItem = document.querySelectorAll(".accordion-item");
 const accordinHeading = document.querySelectorAll(".accordion-item-heading");
+// const accordionContent = document.querySelectorAll(".accordion-item-content");
+// for (let i = 0; i < accordinHeading.length; i++){
+//     accordinHeading[i].addEventListener("click", function() {
+
+//     });
+// }
 accordinHeading.forEach((accHead) => {
     accHead.addEventListener("click", function() {
         const itemClass = this.parentNode.className;
@@ -48,9 +54,36 @@ officeImg.forEach((img) => {
     });
 });
 
+//hamburger menu
+const hamburIcon = document.querySelector(".hamburger-icon");
+const hamburMenu = document.querySelector(".hamburger-menu");
+const menu = document.querySelector(".menu");
+const hamburLink = document.querySelectorAll(".hamburger-links a")
+const close = document.querySelector(".close-menu");
+
+hamburIcon.addEventListener("click", () => {
+    hamburMenu.className = "hamburger-menu absolute top-0 z-20 w-screen h-screen right-0";
+    menu.className = "menu bg-white absolute w-5/6 h-full transition-all duration-1000 right-0";
+});
+
+close.addEventListener("click", () => {
+    hamburMenu.className = "hamburger-menu absolute de-active top-0 z-20 w-screen h-screen delay-500";
+    menu.className = "menu bg-white absolute de-active w-5/6 h-full transition-all duration-1000";
+});
+
+hamburLink.forEach(link => {
+    link.addEventListener("click", () => {
+        hamburMenu.className = "hamburger-menu absolute de-active top-0 z-20 w-screen h-screen delay-500";
+        menu.className = "menu bg-white absolute de-active w-5/6 h-full transition-all duration-1000";
+
+    })
+});
+
 //Sticky navbar
 const nav = document.querySelector(".fixed-nav");
 const navTop = nav.offsetTop;
+const aboutUs = document.querySelector("#about-us");
+const aboutUs1 = aboutUs.offsetTop;
 
 function fixedNav() {
     if (window.scrollY >= navTop) {
@@ -58,6 +91,11 @@ function fixedNav() {
     } else {
         nav.classList.remove("sticky-navbar");
     }
+
+    if (window.scrollY === aboutUs1) {
+        console.log(10);
+        document.querySelector(".about-us-link").classList.add("text-black");
+    }
 }
 
-window.addEventListener("scroll", fixedNav); //
+window.addEventListener("scroll", fixedNav);
