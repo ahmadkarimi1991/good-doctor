@@ -1491,13 +1491,9 @@ video {
   aspect-ratio: 16/9;
 }
 
-.accordion-item {
-  color: #151618;
-  transition: max-height 2s;
-}
-
 .accordion-item-content {
   color: #7B808C;
+  transition: height 0.4s ease;
 }
 
 .accordion-item-heading {
@@ -1518,14 +1514,14 @@ video {
 .close .accordion-item-content {
   height: 0px;
   padding-bottom: 0px;
-  transition: height 1s ease-out;
   transform: scaleY(0);
 }
 
 .open .accordion-item-content {
+  height: 2.5rem;
   transform: scaleY(1);
   transform-origin: top;
-  transition: transform 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .open .accordion-item-content::before {
