@@ -11,6 +11,10 @@
     @apply overflow-y-hidden;
 }
 
+.delay {
+    @apply delay-500;
+}
+
 .head {
     background: linear-gradient(278.3deg, #FFE6CD 0%, #FEF4EA 100%);
 }

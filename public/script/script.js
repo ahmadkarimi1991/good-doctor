@@ -71,7 +71,7 @@ hamburIcon.addEventListener("click", () => {
 });
 
 close.addEventListener("click", () => {
-    hamburMenu.className = "hamburger-menu absolute de-active top-0 z-20 w-screen h-screen delay-500";
+    hamburMenu.className = "hamburger-menu absolute de-active top-0 z-20 w-screen h-screen delay";
     menu.className = "menu bg-white absolute de-active w-5/6 h-full transition-all pt-6 duration-1000";
     body.classList.remove("locked");
 });
@@ -79,7 +79,7 @@ close.addEventListener("click", () => {
 hamburLink.forEach(link => {
     link.addEventListener("click", () => {
         body.classList.remove("locked");
-        hamburMenu.className = "hamburger-menu absolute de-active top-0 z-20 w-screen h-screen delay-500";
+        hamburMenu.className = "hamburger-menu absolute de-active top-0 z-20 w-screen h-screen delay";
         menu.className = "menu bg-white absolute de-active w-5/6 h-full transition-all pt-6 duration-1000";
     });
 });
