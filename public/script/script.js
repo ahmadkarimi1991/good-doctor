@@ -11,6 +11,11 @@ function tawkToe() {
         s1.setAttribute("crossorigin", "*");
         s0.parentNode.insertBefore(s1, s0);
     })();
+    const reservation = document.querySelector(".reservation");
+
+    reservation.addEventListener("click", () => {
+        window.Tawk_API.maximize();
+    });
 }
 //End of Tawk.to Script
 
@@ -61,21 +66,21 @@ const body = document.querySelector("body");
 
 hamburIcon.addEventListener("click", () => {
     hamburMenu.className = "hamburger-menu absolute top-0 z-20 w-screen h-screen right-0";
-    menu.className = "menu bg-white absolute w-5/6 h-full transition-all duration-1000 right-0";
-    body.classList.add("overflow-y-hidden");
+    menu.className = "menu bg-white absolute w-5/6 h-full transition-all pt-6 duration-1000 right-0";
+    body.classList.add("locked");
 });
 
 close.addEventListener("click", () => {
     hamburMenu.className = "hamburger-menu absolute de-active top-0 z-20 w-screen h-screen delay-500";
-    menu.className = "menu bg-white absolute de-active w-5/6 h-full transition-all duration-1000";
-    body.classList.remove("overflow-y-hidden");
+    menu.className = "menu bg-white absolute de-active w-5/6 h-full transition-all pt-6 duration-1000";
+    body.classList.remove("locked");
 });
 
 hamburLink.forEach(link => {
     link.addEventListener("click", () => {
-        body.classList.remove("overflow-y-hidden");
+        body.classList.remove("locked");
         hamburMenu.className = "hamburger-menu absolute de-active top-0 z-20 w-screen h-screen delay-500";
-        menu.className = "menu bg-white absolute de-active w-5/6 h-full transition-all duration-1000";
+        menu.className = "menu bg-white absolute de-active w-5/6 h-full transition-all pt-6 duration-1000";
     });
 });
 
@@ -91,5 +96,7 @@ function fixedNav() {
     }
 }
 
+
+
 window.addEventListener("scroll", fixedNav);
-window.addEventListener("DomContentLoaded", tawkToe);
+window.addEventListener("DOMContentLoaded", tawkToe);
