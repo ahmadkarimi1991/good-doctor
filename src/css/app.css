@@ -3,54 +3,97 @@
 @import "tailwindcss/utilities";
 @import "font.css";
 @import "base.css";
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-@import "font.css";
-@import "base.css";
-.header,
+.scroll-smooth {
+    scroll-behavior: smooth;
+}
+
+.locked {
+    @apply overflow-y-hidden;
+}
+
+.delay {
+    @apply delay-500;
+}
+
+.head {
+    background: linear-gradient(278.3deg, #FFE6CD 0%, #FEF4EA 100%);
+}
+
+#about-us {
+    background-color: #3EBDC614;
+}
+
+.media-bg {
+    background: linear-gradient(90deg, #8BD7DD 0%, #60CDE6 100%);
+}
+
 .footer {
-    background-image: linear-gradient(to bottom right, #FFFF, #FFFF, #FFFBF7, #FFF7F1, #FEF1E6, #FEEEE1, #FEEBDC);
+    background-color: #F1F1F1;
 }
 
 .sticky-navbar {
-    @apply fixed;
-    background-image: linear-gradient(to bottom right, #FFFF, #FFFF, #FFFBF7, #FFF7F1, #FEF1E6, #FEEEE1, #FEEBDC);
-    padding: 0 .25rem!important;
-    box-shadow: 0px 2px 15px #636363;
+    @apply shadow-md py-0 bg-white px-2 !important;
 }
 
-.icons {
-    color: #868686;
+@screen md {
+    .sticky-navbar {
+        @apply fixed;
+    }
 }
 
-.open .accordion-item-heading::after,
-.close .accordion-item-heading::after {
-    @apply w-8 h-8 rounded-lg text-center leading-8 float-left;
-    background-color: #e9e9e9;
+.icons i:hover {
+    color: #A8EAD5;
+}
+
+.avatar::before {
+    @apply w-2.5 h-2.5 absolute left-0 top-1 rounded-full z-10;
+    content: '';
+    background-color: #A8EAD5;
+}
+
+.hamburger-menu {
+    background-color: rgba(62, 189, 198, 0.4);
+}
+
+.de-active {
+    right: -110%;
+}
+
+.aspect-video {
+    aspect-ratio: 16/9;
+}
+
+.accordion-item-content {
+    color: #7B808C;
+    transition: height 0.4s ease;
+}
+
+.accordion-item-heading {
+    @apply flex justify-between items-center gap-4;
 }
 
 .open .accordion-item-heading::after {
-    content: url('../../public/images/stroke-01.svg');
+    content: url('../../public/images/arrow-up.svg');
 }
 
 .close .accordion-item-heading::after {
-    content: url('../../public/images/stroke-02.svg');
+    content: url('../../public/images/arrow-down.svg');
 }
 
 .close .accordion-item-content {
-    @apply h-0 block;
-    transition: height 1s ease-out;
+    @apply h-0 pb-0;
     transform: scaleY(0);
 }
 
 .open .accordion-item-content {
+    @apply h-10;
     transform: scaleY(1);
     transform-origin: top;
-    transition: transform 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 .open .accordion-item-content::before {
-    @apply inline-block w-2 h-2 bg-gray-300;
+    @apply inline-block w-2 h-2;
+    background-color: #C9CBD1;
     content: '';
 }
