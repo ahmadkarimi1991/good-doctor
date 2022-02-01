@@ -6,9 +6,9 @@ function tawkToe() {
         var s1 = document.createElement("script"),
             s0 = document.getElementsByTagName("script")[0];
         s1.async = true;
-        s1.src = "https://embed.tawk.to/61e82011b84f7301d32bd9ed/1fppbqim8";
-        s1.charset = "UTF-8";
-        s1.setAttribute("crossorigin", "*");
+        s1.src = 'https://embed.tawk.to/61f8f8fe9bd1f31184da5825/1fqq8p9bc';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
         s0.parentNode.insertBefore(s1, s0);
     })();
     const reservation = document.querySelector(".reservation");
