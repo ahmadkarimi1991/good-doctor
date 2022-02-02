@@ -1522,11 +1522,11 @@ video {
 }
 
 .open .accordion-item-heading::after {
-  content: url('../../public/images/arrow-up.svg');
+  content: url('../../public/images/arrow-up.png');
 }
 
 .close .accordion-item-heading::after {
-  content: url('../../public/images/arrow-down.svg');
+  content: url('../../public/images/arrow-down.png');
 }
 
 .close .accordion-item-content {
