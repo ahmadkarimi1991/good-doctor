@@ -1340,8 +1340,7 @@ video {
 
   font-weight: 100;
 
-  src: url('../fonts/IRANSansX/woff/IRANSansX-thin.woff') format('woff'),   
-	     url('../fonts/IRANSansX/woff2/IRANSansX-thin.woff2') format('woff2');
+  src: url('../fonts/IRANSansX/woff/IRANSansX-Thin.woff') format('woff'), url('../fonts/IRANSansX/woff2/IRANSansX-Thin.woff2') format('woff2');
 }
 
 @font-face {
@@ -1351,8 +1350,7 @@ video {
 
   font-weight: 200;
 
-  src: url('../fonts/IRANSansX/woff/IRANSansX-UltraLight.woff') format('woff'),   
-	     url('../fonts/IRANSansX/woff2/IRANSansX-UltraLight.woff2') format('woff2');
+  src: url('../fonts/IRANSansX/woff/IRANSansX-UltraLight.woff') format('woff'), url('../fonts/IRANSansX/woff2/IRANSansX-UltraLight.woff2') format('woff2');
 }
 
 @font-face {
@@ -1362,8 +1360,7 @@ video {
 
   font-weight: 300;
 
-  src: url('../fonts/IRANSansX/woff/IRANSansX-light.woff') format('woff'),   
-	     url('../fonts/IRANSansX/woff2/IRANSansX-light.woff2') format('woff2');
+  src: url('../fonts/IRANSansX/woff/IRANSansX-Light.woff') format('woff'), url('../fonts/IRANSansX/woff2/IRANSansX-Light.woff2') format('woff2');
 }
 
 @font-face {
@@ -1373,8 +1370,7 @@ video {
 
   font-weight: 500;
 
-  src: url('../fonts/IRANSansX/woff/IRANSansX-medium.woff') format('woff'),   
-	     url('../fonts/IRANSansX/woff2/IRANSansX-medium.woff2') format('woff2');
+  src: url('../fonts/IRANSansX/woff/IRANSansX-Medium.woff') format('woff'), url('../fonts/IRANSansX/woff2/IRANSansX-Medium.woff2') format('woff2');
 }
 
 @font-face {
@@ -1384,8 +1380,7 @@ video {
 
   font-weight: 600;
 
-  src: url('../fonts/IRANSansX/woff/IRANSansX-demibold.woff') format('woff'),   
-	     url('../fonts/IRANSansX/woff2/IRANSansX-demibold.woff2') format('woff2');
+  src: url('../fonts/IRANSansX/woff/IRANSansX-DemiBold.woff') format('woff'), url('../fonts/IRANSansX/woff2/IRANSansX-DemiBold.woff2') format('woff2');
 }
 
 @font-face {
@@ -1395,8 +1390,7 @@ video {
 
   font-weight: 800;
 
-  src: url('../fonts/IRANSansX/woff/IRANSansX-extrabold.woff') format('woff'),   
-	     url('../fonts/IRANSansX/woff2/IRANSansX-extrabold.woff2') format('woff2');
+  src: url('../fonts/IRANSansX/woff/IRANSansX-ExtraBold.woff') format('woff'), url('../fonts/IRANSansX/woff2/IRANSansX-ExtraBold.woff2') format('woff2');
 }
 
 @font-face {
@@ -1406,8 +1400,7 @@ video {
 
   font-weight: 900;
 
-  src: url('../fonts/IRANSansX/woff/IRANSansX-black.woff') format('woff'),   
-	     url('../fonts/IRANSansX/woff2/IRANSansX-black.woff2') format('woff2');
+  src: url('../fonts/IRANSansX/woff/IRANSansX-Black.woff') format('woff'), url('../fonts/IRANSansX/woff2/IRANSansX-Black.woff2') format('woff2');
 }
 
 @font-face {
@@ -1417,8 +1410,7 @@ video {
 
   font-weight: bold;
 
-  src: url('../fonts/IRANSansX/woff/IRANSansX-bold.woff') format('woff'),   
-	     url('../fonts/IRANSansX/woff2/IRANSansX-bold.woff2') format('woff2');
+  src: url('../fonts/IRANSansX/woff/IRANSansX-Bold.woff') format('woff'), url('../fonts/IRANSansX/woff2/IRANSansX-Bold.woff2') format('woff2');
 }
 
 @font-face {
@@ -1428,12 +1420,11 @@ video {
 
   font-weight: normal;
 
-  src: url('../fonts/IRANSansX/woff/IRANSansX-regular.woff') format('woff'),   
-	     url('../fonts/IRANSansX/woff2/IRANSansX-regular.woff2') format('woff2');
+  src: url('../fonts/IRANSansX/woff/IRANSansX-Regular.woff') format('woff'), url('../fonts/IRANSansX/woff2/IRANSansX-Regular.woff2') format('woff2');
 }
 
 [lang="fa"] {
-  font-family: IRANSansX;
+  font-family: "IRANSansX";
 }
 
 .scroll-smooth {
